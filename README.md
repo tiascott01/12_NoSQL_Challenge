@@ -1,40 +1,38 @@
 # 12_NoSQL_Challenge
 ## Overview
 
-This repository contains a two correlating files ('part_1_mars_news.ipynb' and 'part_2_mars_news.ipynb') with an exported CSV file ('mars_data_export.csv') for analyzing and summarizing data that was scraped from a website. The directions for the module were to scrape data from a website to pull data into a jupyter file, create data and charts against the imported data, and export the findings into a csv.
-
+This repository contains a two correlating files ('NoSQL_Setup.ipynb' and 'NoSQL_analysis.ipynb') for analyzing and summarizing data imported from a json. The directions for the module were to import the JSON into the MongoDB command line and run a series of analyses on the corresponding data in the notebooks. A "Resources" folder contains the original .json file, while the .import.png shows the import into the MondoDB command line.
 
 ## Results
 
-In the 11_WebScraping_Challenge, the first dataset is an scraping from a mars website including title and preview text. The notebook appends data from the website into a more manageable list format which shows the lists in fill from the website. In the second file, another scraping from a separate website collects data about the temperature, date, pressure, and other weather conditions from the location of the Curiosity rover. The data chain continues importing the data and setting into a dataframe for further analysis and graphing. To make sure the data is calculated appropriately, several columns must adhere convert to specific datatypes and are changed to reflect the new type. Several graphs have been calculated against as well as an analysis after each graph answering varying questions about conditions on Mars. A final output of the data is saved in a csv file for future use.
+In the 12_NoSQL_Challenge, the setup notebook imports the json into a database called "uk_food" into a collection called "establishments." The notebook inserts one new restaurant documment into the existing database. Further setup of the document includes more setup of the database, including correctly formatting for the data types for the queries (i.e. changing "$type" that are strings to "&toDouble"s). In the analysis file, several questions have been asked which can be answered with queries of the data. Other questions have been asked which also have specific parameters to query against. In all cases the data has been converted into a pandas dataframe for easier viewing. 
+
+
+
 
 ## Usage
 
+You can use this file to setup the data in the corresponding notebook.
+
+1. Open a new command line or gitbash terminal from the resources folder or navigate to the folder through the terminal.
+
+2. Once you are in the resource folder you can execute the "mongoimport" command to bring the .json into the mongodb database.
+   
+3. For this activity the import code is: **'mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json'**
+
+4. Cells requiring the dependencies such as pymongo and pprint must be imported prior to use.
+   
+5. Run individual cells within the ('NoSQL_Setup.ipynb') to see the calculations, insertions, breakdowns, and type changes.
+
+
+
 You can use this file to analyze the data in the corresponding notebook.
 
-1. Open the respective file (`part_1_mars_news.ipynb') in Jupyter Notebook or VSCode.
-
-2. Make sure that the resource and analysis directories are congruent within their respective places as listed in the script, if not change the location.
+1. Open the respective file (`NoSQL_analysis.ipynb') in Jupyter Notebook or VSCode. A second import of the database is not required. 
    
-3. Cells requiring the dependencies such as BeautifulSoup and Selenium must be imported prior to use.
+2. Cells requiring the dependencies such as pymongo, pprint, and pandas must be imported prior to use.
 
-5. Run individual cells within the (`part_1_mars_news.ipynb') to see the calculations or breakdown by category.
-
-
-
-
-
-You can use this file to analyze the data in the corresponding notebook.
-
-1. Open the respective file (`part_2_mars_news.ipynb') in Jupyter Notebook or VSCode.
-
-2. Make sure that the resource and analysis directories are congruent within their respective places as listed in the script, if not change the location.
-   
-3. Cells requiring the dependencies such as BeautifulSoup and Selenium must be imported prior to use.
-
-5. Run individual cells within the (`part_2_mars_news.ipynb') to see the calculations, breakdown by category, or plots associated with this file.
-
-7. Results will be exported from the notebook into the ('mars_data_export.csv') file.
+2. Run individual cells within the (`NoSQL_analysis.ipynb') to see the calculations, dataframes, and analyses associated with this file.
 
 
 
