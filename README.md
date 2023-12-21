@@ -20,7 +20,7 @@ You can use this file to setup the data in the corresponding notebook.
    
 3. For this activity the import code is: **'mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json'**
     <p align="left">
-    <img src="https://github.com/tiascott01/12_NoSQL_Challenge/blob/main/import.png" width="400", hspace="15">
+    <img src="https://github.com/tiascott01/12_NoSQL_Challenge/blob/main/import.png" width="600", hspace="15">
     </p>
    
 
