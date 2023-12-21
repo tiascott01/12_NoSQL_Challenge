@@ -19,7 +19,7 @@ You can use this file to setup the data in the corresponding notebook.
 2. Once you are in the resource folder you can execute the "mongoimport" command to bring the .json into the mongodb database.
    
 3. For this activity the import code is: **'mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json'**
-    <p align="left">
+    <p align="center">
     <img src="https://github.com/tiascott01/12_NoSQL_Challenge/blob/main/import.png" width="750", hspace="15">
     </p>
    
