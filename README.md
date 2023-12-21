@@ -19,12 +19,16 @@ You can use this file to setup the data in the corresponding notebook.
 2. Once you are in the resource folder you can execute the "mongoimport" command to bring the .json into the mongodb database.
    
 3. For this activity the import code is: **'mongoimport --type json -d uk_food -c establishments --drop --jsonArray establishments.json'**
-
-4. Cells requiring the dependencies such as pymongo and pprint must be imported prior to use.
+    <p align="left">
+    <img src="https://github.com/tiascott01/12_NoSQL_Challenge/blob/main/import.png" width="200", hspace="15">
+    </p>
    
-5. Run individual cells within the ('NoSQL_Setup.ipynb') to see the calculations, insertions, breakdowns, and type changes.
 
+5. Cells requiring the dependencies such as pymongo and pprint must be imported prior to use.
+   
+6. Run individual cells within the ('NoSQL_Setup.ipynb') to see the calculations, insertions, breakdowns, and type changes.
 
+</br>
 
 You can use this file to analyze the data in the corresponding notebook.
 
